@@ -22,7 +22,7 @@ import jakarta.json.JsonReader;
 public class GiphyService {
     private final static String URL = "https://api.giphy.com/v1/gifs";
 
-    //set GIPHY_API_KEY=ETQs75lxK16UTN6ED3vmJPTb2dgrLkHe
+    //set GIPHY_API_KEY=
     @Value("${giphy.api.key}")
     private String giphyKey;
 
