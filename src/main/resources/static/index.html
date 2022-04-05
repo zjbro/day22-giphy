@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.css" integrity="sha512-c9N/Xq0n4rQdyCXF4RgrRYAAOSnNJDp8NWILsSUx+33zWyaMbXXvqajgO0UXybRdTGVpxq3FBrcGwabkWsT8OA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <h1>Search Giphy</h1>
+        <form method="GET" action="/search">
+        <div class="row"><label class="form-label">Search Keywords</label>
+            <input name="q" class="form-control w-50" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+            <datalist id="datalistOptions">
+              <option value="pokemon">
+            </datalist></div>
+        <div class="row">
+            <label class="form-label">Limit: </label>
+            <select class="form-select w-50" aria-label="Default select example" name="limit">
+            <option th:value="5">5</option>
+            <option th:value="10">10</option>
+            <option th:value="15">15</option>
+            <option th:value="20">20</option>
+            <option th:value="25">25</option>
+        </select></div>
+        <div class="row">
+            <label class="form-label">Rating: </label>
+            <select class="form-select w-50" aria-label="Default select example" name="rating">
+            <option th:value="g">g</option>
+            <option th:value="pg">pg</option>
+            <option th:value="pg-13">pg-13</option>
+            <option th:value="r">r</option>
+        </select></div><br>        
+        <input class="btn btn-primary" type="submit" value="Submit">
+    </form>
+    </div>
+    
+</body>
+</html>
