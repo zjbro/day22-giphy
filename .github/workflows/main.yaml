@@ -31,7 +31,7 @@ jobs:
         secret_key: ${{ secrets.secret_key }}
         space_name: spaceymom
         space_region: sgp1
-        source: ./github/badges/jacoco.svg
+        source: /.github/badges/jacoco.svg
         out_dir: coverage/${{ github.event.repository.name }}
         permission: public-read
     - name: Upload coverage report
